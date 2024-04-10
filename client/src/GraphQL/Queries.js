@@ -6,7 +6,6 @@ export const LOAD_USERS = gql`
       id
       firstName
       email
-      password
     }
   }
 `;

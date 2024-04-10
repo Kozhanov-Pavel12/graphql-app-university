@@ -13,10 +13,9 @@ function GetUsers() {
 
   return (
     <div>
-      {/* {" "}
       {users.map((val) => {
         return <h1> {val.firstName}</h1>;
-      })} */}
+      })}
     </div>
   );
 }
