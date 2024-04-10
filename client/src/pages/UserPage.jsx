@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { useQuery } from "@apollo/client";
 import { LOAD_USERS } from "../GraphQL/Queries";
 import Container from 'react-bootstrap/Container';
-import { UserCard } from '../Components/UserCard';
 import Card from 'react-bootstrap/Card';
 
 export const UserPage = ( userItem ) => {
