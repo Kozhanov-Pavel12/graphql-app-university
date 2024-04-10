@@ -17,10 +17,13 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: install modules
+      - name: install modules client
+        working-directory: client
         run: npm install
-      - name: run server
-        run: node index.js
+      - name: install modules server
+        working-directory: server
+        run: npm install
       - name: build project
+        working-directory: client
         run: npm run build
         if: always()
