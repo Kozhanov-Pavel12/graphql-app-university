@@ -8,8 +8,6 @@ import {
 } from "@apollo/client";
 import { onError } from "@apollo/client/link/error";
 import NavbarBlock from './Components/Navbar';
-import GetUsers from "./Components/GetUsers";
-import Form from "./Components/Form";
 import { UserPage } from "./pages/UserPage";
 
 const errorLink = onError(({ graphqlErrors, networkError }) => {
